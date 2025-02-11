@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body style="width: 100vw; font-size: 16px">
+    <header
+        style="display: flex;text-align: right; justify-content: space-between; align-items: center; background-color: grey; border: 30px solid grey;">
+        <div>logo</div>
+
+        <div>
+
+
+            <select style="background-color: grey; color: white;" name="LEARN TO CODE" id="CODE">
+                <option value="">LEARN TO CODE</option>
+                <option value="YOUTH COURSES">Youth courses</option>
+                <option value="ADULT COURSES"> Adult courses</option>
+                <option value="Kids camps">Kids camps</option>
+                <option value="Salesforce Career Accelerator">Salesforce Career Accelerator</option>
+
+
+            </select>
+
+            <select style="background-color: grey; color: white;" name="STARTUPS" id="STARTUPS">
+                <option value="">STARTUPS</option>
+                <option value="I Have an idea">I Have an idea</option>
+                <option value="5 Across"> 5 Across</option>
+                <option value="Startup Accelerator">Startup Accelerator</option>
+                <option value="Awesome Fund">Awesome Fund</option>
+                <option value="Events">Events</option>
+                <option value="Community Yearbook">Community Yearbook</option>
+            </select>
+
+            <select style="background-color: grey; color: white;" name="workspaces" id="Space">
+                <option value="">Workspace</option>
+                <option value="Schedule a Tour">Schedule a Tour</option>
+                <option value="Office Space"> Office Space</option>
+                <option value="Events">Events</option>
+            </select>
+
+            <select style="background-color: grey; color: white;" name=" WEB&APPDEVELOPMENT" id="appDeve">
+                <option value="">WEB & APP DEVELOPMENT</option>
+                <option value="Apax Software">Apax Software</option>
+            </select>
+
+            <select style="background-color: grey; color: white;" name="BE AWESOMES" id="AWESOME">
+                <option value="">BE AWESOME</option>
+                <option value="About">About</option>
+                <option value="Core Values">Core Values</option>
+                <option value="What we Do">What we do</option>
+                <option value="Blog">Blog</option>
+                <option value="Press">Press</option>
+                <option value="Careers">Careers</option>
+                <option value="Interships">Interships</option>
+                <option value="Events">Events</option>
+            </select>
+        </div>
+
+    </header>
+
+    <h1 style="text-align: center;">Make a Website with HTML and CSS </h1>
+    <img src="./Sarahs favorite animal.png " style="width: 100vw;">
+    <p>By Sarah Griffioen
+
+        Today, we're going to be making a website about your favorite animal. We're going to be using Mozilla Thimble,
+        and we'll be writing our website in HTML, CSS, and JavaScript. No prior experience with web design or HTML is
+        required. Let's get started!</p>
+    <h2>STEP 0: HTML BASICS</h2>
+    <p>HTML (Hypertext Markup Language) is the language we will be using to put the information on our pages such as a
+        title, paragraph, list, etc. CSS (Cascading Style Sheets) is what we are going to be using to style our pages by
+        doing things like changing the color, centering the content, etc. We will be looking at some already written CSS
+        code, but we will mostly be writing code in HTML today.
+
+        Before we begin coding our website, it is important that we learn the basis of all HTML: tags. There are four
+        main things that you need to know about tags. </p>
+    <ol class="back">
+        <li>
+            Every element has an opening and a closing tag
+            __Heading__
+
+
+            All tags have "<>" around them
+                <>Heading<>
+                        All closing tags begin with a "/" inside the "<>"
+                            <>Heading</>
+                            All closing tags match their opening tags
+                            <h>Heading</h>
+        </li>
+    </ol>
+    <p>
+        Each tag has a meaning associated with it. For instance, "h1" is the largest heading, "p" is a paragraph, and
+        "ul" makes an unordered list (list with bullet points). You will learn more of these tags as we code our website
+        today, and you can always look up more tag names at w3schools.com. When you are coding your website today, make
+        sure that every element (title, heading, paragraph, list, etc.) has an opening and a closing tag that
+        corresponds with it, otherwise your web page might not appear exactly how you want it to.
+    </p>
+    <h2>STEP 1: SETUP </h2>
+    <p>
+        In order for us to make our website, we will need to follow the steps below to set up a code editor.
+    <ol>
+        <li>
+            Go to Mozilla Thimble.</li>
+        <li>Click "Create an account" in the top right corner. </li>
+        <li>Enter a username, email, and password. </li>
+        <li> Click "Sign Up."</li>
+        <li>Click "Create a new Project." </li>
+
+    </ol>
+    <p>You should now be able to see the code editor on the left and the preview of the website on the right as shown
+        below. Mozilla Thimble gives us a very basic website to start from, and it includes two pages that are shown on
+        the bar on the left. The first page is "index.html," which is always the home page, and "style.css," which is
+        our style sheet.</p>
+    <img src="./untitledimage.png " style="width: 100vw;">
+
+    You should rename your project something about your favorite animal, so click on "Untitled Project" in the top left
+    corner in the green bar, and type in a name like "Sarah's Favorite Animal." Then click "Save." After you've renamed
+    your project, we need to do one more thing before we begin coding our website. Click on the gear icon ⚙ at the top
+    of coding section and turn off "auto close tags" and "autocomplete code."
+
+    As you are going along coding your website, you may encounter some of your code turning pink. If that happens that
+    means that you have made a syntax error. A syntax error means that you typed something in wrong. For example, you
+    could have typed out an opening tag but forgot to type the closing tag. Or maybe you typed the closing tag, but you
+    forgot the forward slash at the beginning of it. Just keep your eyes out for pink text, and if you see any, try to
+    find the error and fix it before going on. Now we're all ready to start coding!
+    <h2>STEP 2: HOME PAGE</h2>
+    Every website needs a home page, and it can also have other pages. We will be making two pages: a Home page and a
+    Fun Facts page that will display random facts about your animal. We are going to start by making the home page.
+    Remember that we said that "index.html" is always the home page, so that is the page we are going to be editing
+    first. Make sure that "index.html" is highlighted in the left bar indicating that "index.html" is the page that is
+    being shown.
+
+    <h2>Title</h2>
+    The first thing we should do is change the title of the Website, and as we said earlier, <h> is the tag that makes
+        text big enough to be a title. Nicely enough, they already have an <h> tag with a title inside of it, so all we
+            have to do is change that text. Pick a title that makes sense with your favorite animal. As you are typing,
+            you should see the title changing on the right side of your screen where the website preview is located. If
+            you don't see this change, click on the reload button ⟳ on the top of the website preview section, and your
+            edit should appear.
+
+            <img src="./index.png" style="width: 100vw;">
+
+            After changing the title, we should change the text inside the <title> tag above. This tag holds the text
+                that goes in the browser tab. We don't want it to say "Made with Thimble." We would rather have it say
+                something more helpful, perhaps the same thing that you put for the title of your website.
+
+                <title>Sarah's Favorite Animal</title>
+                You won't see anything change, but the tab in your web browser will look like the tab shown below once
+                you finish your website.
+
+
+                <img src="./image-5.png" style="width: 100vw;">
+                <h2>Paragraph</h2>
+                The next thing we want to edit is the paragraph. The tag for a paragraph is <p>, and Thimble has already
+                    made a paragraph. We don't want it to say "Make something amazing with the web!", so delete all of
+                    the text in between the opening paragraph tag
+                <p> and the closing paragraph tag </p>. Then write a paragraph that describes your favorite animal. Make
+                sure that your paragraph is inside the opening and closing paragraph tags (<p>paragraph</p>).
+
+
+                <img src="./image-6.png" style="width: 100vw;">
+                <h2>Image</h2>
+                By now, you have edited all you can of the template that Thimble gives you, so we are going to start
+                adding elements of our own! We have a title and a description of our animal, but we don't know what this
+                animal looks like yet. We're going to add an image of our animal before the paragraph, so add a line in
+                between the title and the paragraph. Add the line of code below, and we will finish filling it in after
+                that.
+
+
+                Notice that there is no closing tag to the opening image tag, which violates our rule that every HTML
+                element must have an opening and a closing tag. This just happens to be one of the few exceptions to
+                that rule.
+
+                The "img" tag stands for image, and the "src" attribute of this tag stands for source. The source of an
+                image is where you got the image from, which is often in the form of a URL, or Uniform Resource Locator.
+                We are going to insert the URL for the image in between the quotation marks to specify the source of the
+                image.
+
+                Now we need to find an image of our animal, so go Google Images and search for an image of your animal
+                by typing the name of your animal or something similar. Once you have found an image you like, click on
+                the image, and it should become larger. Right click on the image and select "Copy Image Address."
+
+                <img src="./image-7.png" style="width: 100vw;">
+                Copying the image address will copy the link that points to this image (the source of the image). Now go
+                back to Thimble and paste the link in between the quotation marks inside the image tag. To paste on a
+                Mac, type ⌘ Command+V, and for any other kind of machine, type Control+V.
+
+                Your image should now appear on your screen, but if it does not, there is a good chance that that
+                particular image will not be able to be embedded into a website. If your image does not appear, delete
+                the link that you just pasted into the image tag, go back to Google Images, find a different image, copy
+                that image's link address, and paste it into your image tag.
+
+
+                <img src="./image-8.png" style="width: 100vw;">
+                As you can see, your image might be way too big or way too small. Fortunately, we can change the size of
+                the image to be whatever we would like! Before the closing angle bracket > of the image tag, add a space
+                and the code below.
+
+                width="200"
+                The 200 refers to the width of the image in pixels. A pixel is a tiny dot of color on your computer, and
+                many of those tiny dots together make up the picture and everything else that is displayed on your
+                screen. You can change the number 200 to a different number of pixels until you find the width of the
+                image that you would like.
+
+
+                <img src="./image-9.png" style="width: 100vw;">
+                <h2>Link</h2>
+                Since we won't have time to write down all the information about our animal on our website, it would be
+                a good idea to insert a link to another page that has much more information about our animal. Let's
+                start by writing a sentence that will help the users of your website know where to go to find more
+                information about your animal. Add a new line for this sentence after the paragraph you wrote that
+                describes your animal. Then write the code below onto that new line, inserting the name of your animal
+                in the blank.
+
+                <p>If you want to learn more about the _______, check out <a href="">its Wikipedia page.</a></p>
+                We made a new paragraph with the <p> tag, and then we nested another tag inside of the
+                <p> tag. This tag is the "a" tag, which stands for anchor, but the more important thing to note is the
+                    attribute inside of the "a" tag. The attribute "href" stands for hypertext reference, and just like
+                    "src" with our image, this hypertext reference is going to refer the user to the link once they
+                    click on the words inside the "a" tag. In other words, it will take them to that web page, so we
+                    need to find a link to fill into the quotation marks after the "href."
+
+                    Go to another tab on your web browser and search for "[your animal] Wikipedia." In most cases, the
+                    Wikipedia page for your animal will be the first link that pops up. Click on that link, highlight
+                    the URL on the top left part of the browser, and copy it. To copy on a Mac, type ⌘ Command+C, and
+                    for any other kind of machine, type Control+C.
+
+
+                    <img src="./image-10.png" style="width: 100vw;">
+                    Then go back to Thimble and paste that URL in between the quotation marks in the "a" tag. Remember,
+                    to paste on a Mac, type ⌘ Command+V, and for any other kind of machine, type Control+V. Now if you
+                    click on the words "its Wikipedia page," it should bring you right to the Wikipedia page of your
+                    animal.
+
+
+                    <img src="./image-11.png" style="width: 100vw;">
+                <h2>Lists</h2>
+                Even though you are linking your users to another page with more information about your animal, that
+                doesn't mean you can't add any more information to your website. You can add elements such as lists
+                about your favorite things about your animals. You can't find that information anywhere else on the
+                internet!
+
+                Let's make the first list about why you think your animal is awesome, but before we make the list, we
+                should make a title for it. We don't want this title to be as large as the title for our website, and if
+                you remember, the tag for the title of our website was "h1." That is the biggest heading, and the next
+                biggest heading is "h2." As the numbers after the "h" get bigger, the size of the heading gets smaller,
+                so we are going to want the title of our list to be "h2." It's not too big or too small, so add a new
+                line after the paragraph with the Wikipedia link that we just finished. Then type the line below, and
+                insert the name of your animal in the blank.
+
+                <h2>______ are awesome because...</h2>
+                You should now see your title appear under the paragraphs you wrote before. Now we need to add the list
+                of awesome things about your animal. Before we add it, we first need to learn about the two types of
+                lists, which are ordered and unordered lists. Ordered lists are made with numbers, and unordered lists
+                are made with bullet points. The first example below is an ordered list because there are numbers
+                ordering the items in the list. The second example below is an unordered list because nothing is
+                ordering the items in the list.
+
+                Ordered List
+                <ol>
+                    <li>First thing </li>
+                    <li>Second thing </li>
+                    <li>Third thing </li>
+                </ol>
+
+
+
+                Unordered List
+                <ul>
+                    <li>First thing </li>
+                    <li>Second thing </li>
+                    <li>Third thing </li>
+                </ul>
+
+
+
+                We're going to make one list of each type, and the first one we are going to make will be an ordered
+                list. The tag for an ordered list is is <ol> because "o" and "l" are the first letters of Ordered List.
+                    Let's put the opening and closing "ol" tags down underneath our title from the start to make sure we
+                    don't forget later. Put a new line between the opening and closing "ol" tags.
+
+                    <ol>
+
+                    </ol>
+                    Now we need to add our list items, which are the actual lines of text in our list. The tag for list
+                    items is <li> for the same reason as <ol> (List Item). In the line between the "ol" tags, add your
+                            list item using the "li" tag.
+
+                            <ol>
+                                <li>They can swim really well</li>
+                            </ol>
+                            After you write in the first thing you think is awesome about your animal, you should see it
+                            appear on your website with a number 1. before it. You didn't have to write the 1. because
+                            your web browser knows that this is an ordered list, which has numbers. To make our next
+                            list items, highlight your first list item including the "li" tags, copy it (Control+C or ⌘
+                            Command+C), add a new line under it, paste it (Control+V or ⌘ Command+V), and do that one
+                            more time. You should now have three of the same list item listed as 1, 2, and 3. Now all
+                            you have to do is change the text in between the "li" tags on the last two list items to two
+                            other awesome things about your animal. When you are done, you should have an ordered list
+                            with awesome things about your animal.
+
+                            <img src="./image-12 (1).png" style="width: 100vw;">
+
+                            Now we are going to add an unordered list, so we should first put a title in for this list.
+                            Add a new line after our last list (after the
+                        </ol>), and type the line below, filling in the name of your animal in the blank.
+
+                        <h2>If I were a ______, I would...</h2>
+                        Instead of typing out a whole new list, we can use the one we just made as a template for the
+                        next list. Add a new line after the second title, and highlight the list we made before starting
+                        and ending with the "ol" tags. Copy it (Control+C or ⌘ Command+C), and paste it (Control+V or ⌘
+                        Command+V) in the new line under the second title. Now two of the same list should appear on
+                        your website.
+
+                        We want to change this list to be an unordered list instead of an ordered list, so the tag for
+                        an unordered list is <ul> (Unordered List) instead of <ol>. Change the opening AND closing "ol"
+                                tags to by "ul" tags. The "li" tags can stay the same, but change the information inside
+                                the "li" tags to be things you would do if you were your animal. When you are done, you
+                                should have an unordered list with bullet points.
+
+                                <img src="./image-13 (1).png" style="width: 100vw;">
+
+                                <h2>Video </h2>
+                                The next element we are going to add is a video of your animal, so add a new line under
+                                the unordered list you just made. We want a title for our video, but again, we don't
+                                want the heading to be as big as the title of the website. Let's type an <h2> tag and
+                                    then the title you want for your video. The simplest thing you can put is <h2>______
+                                        Video</h2> where you fill in the name of your animal in the blank.
+
+                                    Next, go to youtube.com, and search for a video of your animal. Once you've found
+                                    the video you want to put on your website, click on the "Share" button right below
+                                    the video on the right side. Then click "Embed" on the left side of the pop-up. The
+                                    HTML code for the video should appear on the right side of the pop-up now. It is an
+                                    "iframe" tag, which is the tag used to embed a video. Highlight everything from the
+                                    opening "iframe" tag to the closing "iframe" tag, and copy it.
+
+
+
+                                    Go back to Thimble, and paste the "iframe" tag you just copied right after the title
+                                    of the video you made. Your video should now appear on your website, and you will be
+                                    able to play it on the screen of your website.
+
+
+                                    </p>
+</body>
+
+</html>
